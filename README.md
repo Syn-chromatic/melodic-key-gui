@@ -1,2 +1,2 @@
 # melodic-key-gui
-Currently early in development 
+Early in development.
