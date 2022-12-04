@@ -1,0 +1,1 @@
+pyuic6 -x -o realtime_chroma_ui.py realtime_chroma_window.ui
