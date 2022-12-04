@@ -100,7 +100,7 @@ class ChromaProcessor:
         self.threadpool.start(self.worker)
 
     def update_chromagram_process(self, audio_io: BytesIO):
-        audio_decomp = ChromaMT(self.adpl).get_audio_decomp(audio_io)
+        audio_decomp = ChromaST(self.adpl).get_audio_decomp(audio_io)
         chromas = audio_decomp.chromas
         p_chromas = self.process_chromas(chromas)
         self.finish_chromagram(p_chromas, audio_decomp)
@@ -178,7 +178,7 @@ class AudioRecorder:
 
             buffer_nbytes = audio_io.getbuffer().nbytes
 
-            if buffer_nbytes > 128_000 or not self.recording:
+            if buffer_nbytes > 256_000 or not self.recording:
                 # time = (audio_io.getbuffer().nbytes) / (self.device.sample_rate * self.device.input_channels * 16 /8)
 
                 chroma_processor.update_chromagram(audio_io)

@@ -7,17 +7,10 @@ if __name__ == "__main__":
     matplotlib.use("QtAgg")
     multiprocessing.freeze_support()
 
-    import warnings
-
-    warnings.filterwarnings("ignore", category=UserWarning)
-
     import sys
     import traceback
     from window_main import Main
     from PyQt6 import QtWidgets
-
-    for i in range(1000):
-        print("\n")
 
     try:
         app = QtWidgets.QApplication(sys.argv)
