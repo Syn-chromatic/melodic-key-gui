@@ -9,9 +9,9 @@ a = Analysis(
     pathex=[],
     binaries=[],
     datas=[
-        ('C:/Users/shady/Desktop/Python Projects/MusicalKey/pyenv310/Lib/site-packages/librosa/util/example_data', 'librosa/util/example_data'),
+        ('./pyenv310/Lib/site-packages/librosa/util/example_data', 'librosa/util/example_data'),
         ('./ffprobe.exe', '.'), ('./ffmpeg.exe', '.'),
-        ('C:/Users/shady/Desktop/Python Projects/MusicalKey/pyenv310/Lib/site-packages/PyQt6', './PyQt6'),
+        ('./pyenv310/Lib/site-packages/PyQt6', './PyQt6'),
         ],
     hiddenimports=['sklearn.utils._weight_vector', 'scipy.special.cython_special'],
     hookspath=[],
