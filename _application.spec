@@ -41,7 +41,7 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['ui\\melodic_key.ico'],
+    icon=['./icon/melodic_key.ico'],
 )
 coll = COLLECT(
     exe,
